@@ -16,5 +16,5 @@
 
     - name: remove the PG-11 package
       yum:
-        name: pgsql-11*
+        name: postgresql-11*
         state: absent
