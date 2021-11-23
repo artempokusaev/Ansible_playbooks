@@ -13,3 +13,8 @@
       when:
         - ansible_os_family == "RedHat"
         - ansible_distribution == "CentOS"
+
+    - name: remove the PG-11 package
+      yum:
+        name: pgsql-11*
+        state: absent
