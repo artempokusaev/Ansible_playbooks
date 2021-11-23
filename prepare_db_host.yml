@@ -1,4 +1,4 @@
-hosts: db_servers1
+hosts: db_servers
   tasks:
   - name: Update all installed packages using YUM module
     yum:
